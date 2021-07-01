@@ -15,7 +15,7 @@ body {
     "footer footer" 90px /
     240px 3fr;
 
-  color: blanchedalmond;
+  color: grey;
 }
 
 li {
@@ -27,6 +27,8 @@ li {
 .two-col-grid {
   display: grid;
   grid-template-columns: auto 1fr;
+
+  gap: 10px;
 }
 
 /* Utility styles */
@@ -34,6 +36,10 @@ li {
 .align-items__center {
   display: grid;
   align-items: center;
+}
+
+.border-bottom {
+  border-bottom: 1px solid grey;
 }
 
 /* Left sidebar styles */
@@ -53,29 +59,27 @@ li {
   margin-bottom: 1rem;
 }
 
-.left-sidebar .profile .icon {
-  width: 16px;
-}
-
 .left-sidebar .logo {
   width: 140px;
 }
 
 .left-sidebar .fake-button {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 
   background-color: grey;
+  color: black;
 
   font-weight: 900;
+  font-size: 1.5rem;
 
   display: grid;
   place-content: center;
 }
 
 .frame {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 
   border-radius: 50%;
   overflow: hidden;
@@ -89,8 +93,32 @@ img {
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.left-sidebar .profile > * {
+  padding: 10px 0;
+}
+
+.left-sidebar .playlist h2 {
+  margin-bottom: 10px;
+
+  color: white;
+
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.left-sidebar .profile .icon {
+  width: 16px;
+  height: 16px;
+}
+
+.left-sidebar .profile .user-name {
+  color: white;
+
+  font-weight: 900;
 }
 
 /* Main styles */
