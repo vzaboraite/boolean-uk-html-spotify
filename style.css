@@ -271,3 +271,35 @@ img {
 
   background-color: white;
 }
+
+/* Styles of right part of the footer */
+
+.footer .extra-controls {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+
+  place-content: center;
+}
+
+.footer .extra-controls .sound-control {
+  display: grid;
+  place-items: center;
+}
+
+.footer .extra-controls .sound-control .progress-bar {
+  height: 5px;
+  width: 100px;
+
+  background-color: grey;
+
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer .extra-controls .sound-control .progress-bar .loading-bar {
+  height: 5px;
+  width: 50%;
+
+  background-color: white;
+}
