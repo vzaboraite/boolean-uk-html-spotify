@@ -215,3 +215,59 @@ img {
   width: 20px;
   height: 20px;
 }
+
+/* Styles of center part of the footer */
+
+.footer .main-controls {
+  display: grid;
+  place-items: center;
+}
+
+.footer .main-controls .buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.footer .main-controls .buttons .play-button {
+  width: 25px;
+  height: 25px;
+
+  border: 2px solid white;
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center;
+}
+
+.footer .main-controls .bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+
+  align-items: center;
+}
+
+.footer .main-controls .bar .elapsed-time,
+.footer .main-controls .bar .total-time {
+  color: white;
+}
+
+.footer .main-controls .bar .progress-bar {
+  width: 500px;
+  height: 8px;
+
+  background-color: grey;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.footer .main-controls .bar .progress-bar .loading-bar {
+  width: 30%;
+  height: 8px;
+
+  background-color: white;
+}
