@@ -12,8 +12,8 @@ body {
   display: grid;
   grid-template:
     "left-aside main" 1fr
-    "footer footer" 90px /
-    240px 3fr;
+    "footer footer" auto /
+    auto 1fr;
 
   color: grey;
 }
@@ -169,5 +169,49 @@ img {
 /* Footer styles */
 .footer {
   grid-area: footer;
-  background-color: cadetblue;
+  background-color: #413f3f;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+/* Styles of left part of the footer */
+
+.footer .current-song {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  padding: 0 10px;
+
+  gap: 10px;
+  align-content: center;
+}
+
+.footer .current-song .cover-img {
+  width: 60px;
+  height: 60px;
+}
+
+.footer .current-song .song-info {
+  display: grid;
+  align-content: center;
+}
+
+.footer .current-song .song-info .artist {
+  color: white;
+}
+
+.footer .current-song .icons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+
+  margin-left: 20px;
+
+  place-content: center;
+}
+
+.footer .current-song .icon {
+  width: 20px;
+  height: 20px;
 }
