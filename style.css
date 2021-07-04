@@ -59,8 +59,37 @@ a {
   grid-template-rows: auto 1fr 2fr auto;
 }
 
-.left-sidebar li {
+.left-sidebar .left-navbar li {
   margin-bottom: 1rem;
+
+  fill: grey;
+}
+
+.left-sidebar .left-navbar li:hover {
+  fill: white;
+  color: white;
+}
+
+.left-sidebar .left-navbar li.active {
+  fill: white;
+  color: white;
+  /* set position relative to li.active 
+for creating pseudo-element ::before below. */
+  position: relative;
+}
+
+/* ::before creates pseudo-element for li.active element  */
+.left-sidebar .left-navbar li.active::before {
+  content: "";
+  position: absolute;
+  /* height, width and background-color draw 
+  the vertical line  */
+  height: 30px;
+  width: 3px;
+  background-color: #1db954;
+  /* left:-0.5em moves pseudo-element to the left side 
+  of the content  */
+  left: -0.5em;
 }
 
 .left-sidebar .logo {
@@ -184,7 +213,7 @@ for creating pseudo-element ::after below. */
   position: relative;
 }
 
-/* ::after creates-pseudo element to .section.active element */
+/* ::after creates pseudo-element to .section.active element */
 .main .main-navbar .section.active::after {
   /* create empty css pseudo-element that will become as
    the underline */
