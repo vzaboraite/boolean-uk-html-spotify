@@ -137,6 +137,14 @@ for creating pseudo-element ::before below. */
   text-transform: uppercase;
 }
 
+.left-sidebar .playlist li a {
+  color: grey;
+}
+
+.left-sidebar .playlist li:hover a {
+  color: white;
+}
+
 .left-sidebar .profile > * {
   padding: 10px 0;
 }
@@ -404,10 +412,16 @@ for creating pseudo-element ::after below. */
 }
 
 .footer .main-controls .bar .progress-bar .loading-bar {
-  width: 30%;
+  width: 0;
   height: 8px;
 
   background-color: white;
+
+  transition: 1s linear;
+}
+
+.footer .main-controls .bar .progress-bar:hover .loading-bar {
+  width: 30%;
 }
 
 /* Styles of right part of the footer */
