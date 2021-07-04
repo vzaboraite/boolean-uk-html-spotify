@@ -65,6 +65,8 @@ a {
 
 .left-sidebar .logo {
   width: 140px;
+
+  margin-bottom: 10px;
 }
 
 .left-sidebar .fake-button {
@@ -174,8 +176,11 @@ img {
   color: white;
 }
 
-.main .collection h2 {
+.main .collection h2,
+.main .collection p {
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main .collection .albums {
@@ -192,8 +197,23 @@ img {
   width: 185px;
 }
 
+.main .collection .albums .album .artist-cover {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 .main .collection .albums .album .album-info {
   text-align: center;
+}
+
+.main .collection .albums .album .album-info h3 {
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .main .collection .albums .album .album-info h4 {
