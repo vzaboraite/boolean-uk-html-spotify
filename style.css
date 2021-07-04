@@ -238,9 +238,6 @@ img {
 
   display: grid;
   grid-template-columns: auto 1fr auto;
-
-  position: sticky;
-  bottom: 0;
 }
 
 /* Styles of left part of the footer */
